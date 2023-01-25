@@ -108,7 +108,8 @@ function HTML() {
         document.querySelector("#js").classList.remove("active")
         document.querySelector("#react").classList.remove("active")
         document.querySelector("#sanity").classList.remove("active")
-}
+        //Referanse for kode Sara Stensrud
+    }
 
 function CSS() {
     let sourcesHTML = ""
@@ -123,7 +124,8 @@ function CSS() {
         document.querySelector("#js").classList.remove("active")
         document.querySelector("#react").classList.remove("active")
         document.querySelector("#sanity").classList.remove("active")
-}
+        //Referanse for kode Sara Stensrud
+    }
 
 function JS() {
     let sourcesHTML = ""
@@ -138,7 +140,8 @@ function JS() {
         document.querySelector("#css").classList.remove("active")
         document.querySelector("#react").classList.remove("active")
         document.querySelector("#sanity").classList.remove("active")
-}
+         //Referanse for kode Sara Stensrud
+    }
 
 function React() {
     let sourcesHTML = ""
@@ -153,6 +156,7 @@ function React() {
         document.querySelector("#css").classList.remove("active")
         document.querySelector("#js").classList.remove("active")
         document.querySelector("#sanity").classList.remove("active")
+        //Referanse for kode Sara Stensrud
 }
 
 function Sanity() {
@@ -168,6 +172,7 @@ function Sanity() {
         document.querySelector("#css").classList.remove("active")
         document.querySelector("#js").classList.remove("active")
         document.querySelector("#react").classList.remove("active")
+        //Referanse for kode Sara Stensrud
 }
 
 HTML()
