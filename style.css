@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --grey: #808080;
+    --translusentgrey: rgba(128, 128, 128, .5);
+    --lightgrey: #f4f4f4;
+    --lightblue: #5CE0EA;
+    --maxwidth: 900px;
+    --fontsize: 30px
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--grey);
+}
+
+div.box {
+    width: 100%;
+    max-width: var(--maxwidth);
+    padding-top: 3rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    border: 1px solid var(--translusentgrey);
+    width: 100%;
+    max-width: var(--maxwidth);
+}
+
+header h2{
+    text-transform: uppercase;
+    font-size: var(--fontsize);
+    text-size-adjust: bold;
+    padding: 1rem 2rem;
+}
+
+button.active {
+    color: white;
+    background-color: var(--lightblue);
+    border-color: var(--lightblue);
+}
+button.active:hover {
+    color: var(--grey);
+    border-color: var(--lightblue);
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 0%;
+    border-left: 1px solid var(--translusentgrey);
+    border-right: 1px solid var(--translusentgrey);
+    border-top: 1px solid var(--translusentgrey);
+    border-bottom: 1px solid var(--lightblue);
+    color: var(--grey);
+    background-color: var(--lightgrey);
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: ease-in-out .3s;
+}
+button:hover {
+    color: var(--lightblue);
+    border-bottom: 1px solid var(--grey);
+}
+
+section {
+    width: 100%;
+    max-width: var(--maxwidth);
+    border-left: 1px solid var(--translusentgrey);
+    border-right: 1px solid var(--translusentgrey);
+    border-top: 5px solid var(--lightblue);
+    border-bottom: 1px solid var(--translusentgrey);
+}
+section h2 {
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+section p {
+    padding-left: 2rem;
+}
+section ul {
+    padding-left: 3rem;
+}

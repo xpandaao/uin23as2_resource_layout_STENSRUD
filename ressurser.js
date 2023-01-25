@@ -94,3 +94,57 @@ const resources = [
         ]
     },
 ]
+
+function HTML() {
+    let sourcesHTML = ""
+    resources.map(source => { if (source.category.includes("HTML")){ sourcesHTML += `<h2>${source.category}</h2>
+        <p>${source.text}</p>
+        <ul>${source.sources.map(links => `<li><a href="${links.url}">${links.title}</a>`)}</li></ul>`}})
+
+        document.querySelector("section").innerHTML = sourcesHTML
+
+}
+
+function CSS() {
+    let sourcesHTML = ""
+    resources.map(source => { if (source.category.includes("CSS")){ sourcesHTML += `<h2>${source.category}</h2>
+        <p>${source.text}</p>
+        <ul>${source.sources.map(links => `<li><a href="${links.url}">${links.title}</a>`)}</li></ul>`}})
+
+        document.querySelector("section").innerHTML = sourcesHTML
+
+}
+
+function JS() {
+    let sourcesHTML = ""
+    resources.map(source => { if (source.category.includes("JavaScript")){ sourcesHTML += `<h2>${source.category}</h2>
+        <p>${source.text}</p>
+        <ul>${source.sources.map(links => `<li><a href="${links.url}">${links.title}</a>`)}</li></ul>`}})
+
+        document.querySelector("section").innerHTML = sourcesHTML
+
+}
+
+function React() {
+    let sourcesHTML = ""
+    resources.map(source => { if (source.category.includes("React")){ sourcesHTML += `<h2>${source.category}</h2>
+        <p>${source.text}</p>
+        <ul>${source.sources.map(links => `<li><a href="${links.url}">${links.title}</a>`)}</li></ul>`}})
+
+        document.querySelector("section").innerHTML = sourcesHTML
+
+}
+
+function Sanity() {
+    let sourcesHTML = ""
+    resources.map(source => { if (source.category.includes("Sanity")){ sourcesHTML += `<h2>${source.category}</h2>
+        <p>${source.text}</p>
+        <ul>${source.sources.map(links => `<li><a href="${links.url}">${links.title}</a>`)}</li></ul>`}})
+
+        document.querySelector("section").innerHTML = sourcesHTML
+
+}
+
+HTML()
+
+
