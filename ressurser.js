@@ -103,6 +103,8 @@ function HTML() {
 
         document.querySelector("section").innerHTML = sourcesHTML
 
+        document.querySelector("#html").classList.add(".active")
+        document.querySelector("#css", "#js", "react", "sanity").classList.remove(".active")
 }
 
 function CSS() {
@@ -113,6 +115,8 @@ function CSS() {
 
         document.querySelector("section").innerHTML = sourcesHTML
 
+        document.querySelector("#css").classList.add(".active")
+        document.querySelector("#html", "#js", "react", "sanity").classList.remove(".active")
 }
 
 function JS() {
@@ -123,6 +127,8 @@ function JS() {
 
         document.querySelector("section").innerHTML = sourcesHTML
 
+        document.querySelector("#js").classList.add(".active")
+        document.querySelector("#html", "#css", "react", "sanity").classList.remove(".active")
 }
 
 function React() {
@@ -133,6 +139,8 @@ function React() {
 
         document.querySelector("section").innerHTML = sourcesHTML
 
+        document.querySelector("#react").classList.add(".active")
+        document.querySelector("#html", "#css", "js", "sanity").classList.remove(".active")
 }
 
 function Sanity() {
@@ -143,8 +151,9 @@ function Sanity() {
 
         document.querySelector("section").innerHTML = sourcesHTML
 
+        document.querySelector("#sanity").classList.add(".active")
+        document.querySelector("#html", "#css", "js", "react").classList.remove(".active")
+
 }
 
 HTML()
-
-
